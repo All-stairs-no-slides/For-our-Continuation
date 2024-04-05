@@ -50,7 +50,7 @@ x = (_xorigin * (cos(degtorad(_dir))))
 // first bit excluded here 4 same reason
 y = -(_xorigin * (sin(degtorad(_dir))))
 
-// reassign pos based on player position
+// reassign pos based on player positio
 switch(player.face_state){
 	case 0:
 		ass_depth = true

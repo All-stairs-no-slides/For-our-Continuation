@@ -55,8 +55,6 @@ if(45 > _dir  or _dir  >= 315){
 } else if(225 < _dir  and _dir  < 315){
 	image_index = (max(9, image_index % 16))
 	face_state = 3
-
-	
 }
 
 
