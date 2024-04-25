@@ -67,6 +67,7 @@
     {"id":{"name":"eden_tree_spr","path":"sprites/eden_tree_spr/eden_tree_spr.yy",},},
     {"id":{"name":"enemy_gun_sprayer_spr","path":"sprites/enemy_gun_sprayer_spr/enemy_gun_sprayer_spr.yy",},},
     {"id":{"name":"pea_bul_spr","path":"sprites/pea_bul_spr/pea_bul_spr.yy",},},
+    {"id":{"name":"fight_1_rm5","path":"rooms/fight_1_rm5/fight_1_rm5.yy",},},
     {"id":{"name":"grass_ts","path":"tilesets/grass_ts/grass_ts.yy",},},
     {"id":{"name":"shadow_spr","path":"sprites/shadow_spr/shadow_spr.yy",},},
     {"id":{"name":"dead_en_obj","path":"objects/dead_en_obj/dead_en_obj.yy",},},
@@ -95,6 +96,7 @@
     {"roomId":{"name":"fight_1_rm","path":"rooms/fight_1_rm/fight_1_rm.yy",},},
     {"roomId":{"name":"es","path":"rooms/es/es.yy",},},
     {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
+    {"roomId":{"name":"fight_1_rm5","path":"rooms/fight_1_rm5/fight_1_rm5.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

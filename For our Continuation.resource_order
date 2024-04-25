@@ -45,6 +45,7 @@
     {"name":"eden_tree_spr","order":19,"path":"sprites/eden_tree_spr/eden_tree_spr.yy",},
     {"name":"enemy_gun_sprayer_spr","order":2,"path":"sprites/enemy_gun_sprayer_spr/enemy_gun_sprayer_spr.yy",},
     {"name":"pea_bul_spr","order":11,"path":"sprites/pea_bul_spr/pea_bul_spr.yy",},
+    {"name":"fight_1_rm5","order":5,"path":"rooms/fight_1_rm5/fight_1_rm5.yy",},
     {"name":"grass_ts","order":3,"path":"tilesets/grass_ts/grass_ts.yy",},
     {"name":"shadow_spr","order":20,"path":"sprites/shadow_spr/shadow_spr.yy",},
     {"name":"dead_en_obj","order":4,"path":"objects/dead_en_obj/dead_en_obj.yy",},
