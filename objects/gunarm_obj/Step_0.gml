@@ -1,4 +1,4 @@
-image_angle = point_direction(x, y, mouse_x, mouse_y)
+image_angle = point_direction(player.x, player.y, mouse_x, mouse_y)
 
 visible = true
 // firing state machine
@@ -24,7 +24,7 @@ switch(fire_state){
 			break;
 		}
 		instance_create_layer(x, y, "bullets", bullet_t, {
-			direction : point_direction(x, y, mouse_x, mouse_y),
+			direction : point_direction(player.x, player.y, mouse_x, mouse_y),
 			speed : bullet_spd,
 		})
 		fire_state = 3
