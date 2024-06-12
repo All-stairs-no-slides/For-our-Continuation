@@ -1,28 +1,38 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// check if it spawned in the location of another enemy, and place it somewhere else
+// this is the image indexes for each gun
+i_indexes = array_create(array_length(spr_g), image_index);
 
+// this is a array for all of the guns angles
+i_angles = array_create(array_length(spr_g), image_angle);
 
-state = "passive"
-canshoot = array_create(array_length(spr_g), false)
+// !!!important!!! put rotation speeds in this variable later
+r_speeds = []
 
 // durations between each shot
 durs = []
 
-for (i=0; i < array_length(spr_g); i++){
-	switch(spr_g[i]){ 
+// check if it spawned in the location of another enemy, and place it somewhere else
+state = "passive"
+canshoot = array_create(array_length(spr_g), false)
+
+for (var _i=0; _i < array_length(spr_g); _i++){
+	switch(spr_g[_i]){ 
 		case enemy_gun_gat_spr:
-			dur[i] = 0.25
-			alarm[i] = i+1 * game_get_speed(gamespeed_fps)
+			durs[_i] = 0.25
+			alarm[_i] = _i+1 * game_get_speed(gamespeed_fps)
+			r_speeds[_i] = 2;
 			break;
 		case en_gun_pea_spr:
-			dur[i] = 2
-			alarm[i] = i+1 * game_get_speed(gamespeed_fps)
+			durs[_i] = 2
+			alarm[_i] = _i+1 * game_get_speed(gamespeed_fps)
+			r_speeds[_i] = 2
 			break;
 		case enemy_gun_sprayer_spr:
-			dur[i] = 2
-			alarm[i] = i+1 * game_get_speed(gamespeed_fps)
+			durs[_i] = 2
+			alarm[_i] = _i+1 * game_get_speed(gamespeed_fps)
+			r_speeds[_i] =  0
 			break;
 	}
 }

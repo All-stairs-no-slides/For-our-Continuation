@@ -9,7 +9,7 @@ for (var _i = 1; (_i - 1) < array_length(spr_g); _i++){
 	part_system_position(ps[_i - 1], x - 20 + (32 * (_i % 2 )), y - (30 * (ceil(_i/2))));
 	
 	
-	draw_sprite_ext(spr_g[_i - 1], image_index,x - 20 + (32 * (_i % 2 )), y - (30 * (ceil(_i/2))), 1, 1, image_angle, c_white, 1)
+	draw_sprite_ext(spr_g[_i - 1], image_index,x - 20 + (32 * (_i % 2 )), y - (30 * (ceil(_i/2))), 1, 1, i_angles[_i - 1], c_white, 1)
 }
 
 //show_message(h)
