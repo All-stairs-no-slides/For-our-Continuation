@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.617982,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "gunarm",
+    "path": "folders/Sounds/gunarm.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -1,7 +1,9 @@
-/// @description movement
-// You can write your code in this editor
-// for switching sprite direction
+//var _sorter = instance_find(collider_depth_sorter_obj, 0)
 
+//show_debug_message(array_get_index(_sorter.colliders, id))
+
+
+// for switching sprite direction
 var _x_mov = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * _hspd
 
 var _y_mov = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * _vspd
@@ -26,11 +28,15 @@ if(_vspd == 1 and _hspd  == 1){
 	image_index = 1
 }
 
-move_and_collide(_x_mov, _y_mov, collider_obj)
-var _dir = point_direction(x, y, mouse_x, mouse_y)
+if(keyboard_check_pressed(vk_shift) && can_dash){
+	can_dash = false
+	dash = 3
+	alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
+	alarm[1] = 0.6 * game_get_speed(gamespeed_fps)
+}
 
-//endefector origin (diff from the hand (the y was a 0 diff))
-var _xorigin = 23
+move_and_collide(dash * (_x_mov * (1 - (_y_mov != 0)/4)), dash * (_y_mov * (1 - (_x_mov != 0)/4)), collider_obj)
+var _dir = point_direction(x, y, mouse_x, mouse_y)
 
 // point right
 if(45 > _dir  or _dir  >= 315){
@@ -56,7 +62,3 @@ if(45 > _dir  or _dir  >= 315){
 	image_index = (max(9, image_index % 16))
 	face_state = 3
 }
-
-
-
-

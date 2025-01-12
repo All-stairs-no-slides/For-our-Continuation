@@ -1,3 +1,4 @@
+
 image_angle = point_direction(player.x, player.y, mouse_x, mouse_y)
 
 visible = true
@@ -6,7 +7,11 @@ switch(fire_state){
 	// neutral
 	case 0:
 		image_index = 0
-		if (mouse_check_button_pressed(mb_left)){
+		if(ammo == 0){
+			fire_state = 4	
+		}
+		
+		if (mouse_check_button_pressed(mb_left)){ 
 			fire_state = 1
 		}
 		break;
@@ -20,6 +25,7 @@ switch(fire_state){
 	
 	// firing
 	case 2:
+		
 		if(image_index < 6){
 			break;
 		}
@@ -27,6 +33,7 @@ switch(fire_state){
 			direction : point_direction(player.x, player.y, mouse_x, mouse_y),
 			speed : bullet_spd,
 		})
+		ammo -= 1 
 		fire_state = 3
 		break;
 		
@@ -35,6 +42,26 @@ switch(fire_state){
 		if(image_index == 1){
 			fire_state = 0
 		}
+		break;
+		
+	case 4:
+		image_index = 0
+		if(!audio_is_playing(reload_gunarm_sd))
+		{
+			ammo += 1
+			if(ammo == ammo_max)
+			{
+				fire_state = 0
+			}
+			audio_play_sound_ext(
+				{
+					sound: reload_gunarm_sd,
+					pitch: 7, 
+					gain: 1
+				}
+			)
+		}
+		
 		break;
 }
 
@@ -62,7 +89,7 @@ switch(player.face_state){
 		
 	case 1:
 		ass_depth = true
-		x += _px - 10
+		x += _px - 13
 		y += _py - 6
 		depth = player.depth + 1
 		image_yscale = 1
@@ -78,10 +105,14 @@ switch(player.face_state){
 		break;
 		
 	case 3:
+	
 		ass_depth = false
-		x += _px + 7
+		
+		x += _px + 13
 		y += _py - 4
 		image_yscale = 1
 		break;
 }
+
+
 

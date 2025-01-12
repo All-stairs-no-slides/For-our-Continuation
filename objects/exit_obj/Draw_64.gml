@@ -8,6 +8,9 @@ if(d){
 	draw_set_color(c_red)
 	draw_text(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]), "PRESS E TO ENTER")
 	d = false	
+	draw_set_color(c_white)
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
 }
 
 

@@ -9,5 +9,5 @@ for(var _i = 0; _i < array_length(ps); _i++){
 
 main.ens -= 1
 
-//instance_create_layer(x, y - 5, "dead_bodies", dead_en_obj)
+instance_create_layer(x, y + 10, "dead_bodies", dead_en_obj)
 

@@ -11,6 +11,7 @@ function fire(_i, diff){
 				image_angle : i_angles[_i],
 				type : spr_g[_i],
 				speed : 5,
+				legs: legs.id,
 			})
 		}
 	}

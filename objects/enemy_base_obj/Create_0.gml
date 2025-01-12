@@ -9,27 +9,31 @@ paths = [base_1_path]
 
 in_path = false
 
+// choose health
 switch(head){
 	case enemy_body_1_spr:
 		en_health = 20
+		
 	break;
 }
+
+en_max_health = en_health
 
 function pathing(_path){
 	switch(_path){
 		case 0:
 			if(!in_path){
 				path_end()
-				//path_start(paths[0], 2, path_action_restart, false)
+				path_start(paths[0], 2, path_action_restart, false)
 				in_path = true
 			}
 		break;
 		
 		case 1:
 			in_path = false
-			//if(mp_potential_step(player.x, player.y, 3, false)){
+			if(mp_potential_step(player.x, player.y, 3, false)){
 				
-			//}
+			}
 		break;
 	}
 	
@@ -41,19 +45,21 @@ pathing(0)
 sprite_index = leg
 e_gun = instance_create_layer(x, y-((sprite_height/2)), "bodies", enemy_gun_obj, {
 	spr_g : gun,
-	legs : self,
+	legs : self.id,
 })
 
 e_bod = instance_create_layer(x, (y-((sprite_height/2) - 10)), "bodies", enemy_body_obj, {
 	sprite_index : head,
+	legs: self.id,
 })
-
+var _hi = 0
 //show_message(sprite_width)
-while(collision_circle(x, y, sprite_height, collider_obj, false, true)){
+while(collision_circle(x, y, sprite_height * 1.5, collider_obj, false, true)){
 	x = 100 + (random(room_width - 155))
 	y = 100 + (random(room_height - 160))
 	//show_message("stuck")
-	
+	_hi += 1
 }
 
+show_debug_message(_hi)
 //path_start(Path1, 2, path_action_reverse, false)

@@ -1,9 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-// show_debug_message(type)
+// add to depth sorting
+depth_sorter = instance_find(collider_depth_sorter_obj, 0);
+depth_sorter.colliders[array_length(depth_sorter.colliders)] = self;
 
-
-
+// the state machine 4 hat typ of bullte it is
 switch(type){
 	case enemy_gun_gat_spr:
 		direction = point_direction(x, y, player.x, player.y)
@@ -24,6 +23,7 @@ switch(type){
 							direction : ceil(random(360)),
 							type : spray_bul_spr,
 							speed : 5,
+							legs: legs,
 						})
 		}
 	break;
@@ -32,11 +32,3 @@ switch(type){
 		damage = 1
 	break;
 }
-
-
-
-
-
-
-
-

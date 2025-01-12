@@ -1,37 +1,19 @@
-/// @description Insert description here
-// You can write your code in this editor
-var ps = part_system_create_layer("particles", true);
-part_system_draw_order( ps, true);
+paused = false;
+if(audio_is_paused(start_screen_sd) || !audio_is_playing(start_screen_sd)){
+	audio_play_sound(main_hub_sd, 0, true)
+	show_debug_message("hi")
+}
 
-var ptype1 = part_type_create();
-part_type_shape( ptype1, pt_shape_line );
-part_type_size( ptype1, 0.01, 2, 0, 0 );
-part_type_scale( ptype1, 0.4, 0.4);
-part_type_speed( ptype1, 20, 20, 0, 0);
-part_type_direction( ptype1, 0, 360, 0, 0);
-part_type_gravity( ptype1, 0, 351);
-part_type_orientation( ptype1, 0, 0, 0, 0, true);
-part_type_colour3( ptype1, $FFFFFF, $000000, $FFFFFF );
-part_type_alpha3( ptype1, 0.427, 1, 0);
-part_type_blend( ptype1, true);
-part_type_life( ptype1, 100, 100);
-
-var pemit1 = part_emitter_create( ps );
-part_emitter_region( ps, pemit1, -5.638466, 5.638466, -4.7618713, 4.7618713, ps_shape_rectangle, ps_distr_linear );
-part_emitter_interval(ps, pemit1, 1, 1, time_source_units_seconds)
-part_emitter_stream(ps, pemit1, ptype1, 0.5);
-part_system_depth(ps, 0)
-part_system_position(ps,player.x, player.y);
 entered = 0
 
 ens = 1
 
 spawn = false
 
+hp_max = 100
 health = 100
 
 global.en_credits = 10
-
 
 function first_room_spawner(){
 	prev_c = global.en_credits
@@ -109,3 +91,4 @@ function first_room_spawner(){
 
 
 oroom = room
+depth = 0

@@ -7,3 +7,7 @@ max_spd = 4
 _hspd = 1
 
 _vspd = 1
+
+dash = 1
+
+can_dash = true

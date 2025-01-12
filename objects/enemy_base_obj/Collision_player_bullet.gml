@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-en_health -= 20
+en_health -= 10
 		
 		
 
