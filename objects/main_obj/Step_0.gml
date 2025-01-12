@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(room == end_screen_rm){
-	show_debug_message("hoi");
+if(room == home_rm){
+	//show_debug_message("hoi");
 }
 
 
