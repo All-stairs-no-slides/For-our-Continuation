@@ -13,6 +13,7 @@ if (sqrt((sqr(player.x - x)) + sqr(player.y - y)) < 200 ){
 		player.y = 316
 
 		main.spawn = true
-
+		main.ship_data()
+		main.closeness_data = []
 	}
 }

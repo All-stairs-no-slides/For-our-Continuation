@@ -35,10 +35,11 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"For our Continuation",
   "resources":[
+    {"id":{"name":"enemy_select_ext","path":"extensions/enemy_select_ext/enemy_select_ext.yy",},},
     {"id":{"name":"GUI_fnt","path":"fonts/GUI_fnt/GUI_fnt.yy",},},
     {"id":{"name":"bullet_obj","path":"objects/bullet_obj/bullet_obj.yy",},},
     {"id":{"name":"collider_depth_sorter_obj","path":"objects/collider_depth_sorter_obj/collider_depth_sorter_obj.yy",},},

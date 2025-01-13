@@ -1,0 +1,6 @@
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\bin\Debug\Enemy_creation_ext.dll
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\bin\Debug\Enemy_creation_ext.pdb
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\Debug\Enemy_creation_ext.csproj.AssemblyReference.cache
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\Debug\Enemy_creation_ext.csproj.CoreCompileInputs.cache
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\Debug\Enemy_creation_ext.dll
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\Debug\Enemy_creation_ext.pdb

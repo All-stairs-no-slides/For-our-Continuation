@@ -1,11 +1,15 @@
+//*****************************
+// setup vars
+//*****************************
+
+// this is the data that shall be piped into the ML model
+closeness_data = []
+
 paused = false;
-if(audio_is_paused(start_screen_sd) || !audio_is_playing(start_screen_sd)){
-	audio_play_sound(main_hub_sd, 0, true)
-	show_debug_message("hi")
-}
 
 entered = 0
 
+// enemies alive set to 1 initially so that they dont set off the enemies all dead sequence at home_rm
 ens = 1
 
 spawn = false
@@ -13,8 +17,25 @@ spawn = false
 hp_max = 100
 health = 100
 
+oroom = room
+depth = 0
+
 global.en_credits = 10
 
+//*************************
+// functionalities below
+//*************************
+if(audio_is_paused(start_screen_sd) || !audio_is_playing(start_screen_sd)){
+	audio_play_sound(main_hub_sd, 0, true)
+	show_debug_message("hi")
+}
+
+
+// **************************
+// methods below
+//***************************
+
+// spawn enemies in the first room
 function first_room_spawner(){
 	prev_c = global.en_credits
 	bod = 0
@@ -89,6 +110,24 @@ function first_room_spawner(){
 	
 }
 
-
-oroom = room
-depth = 0
+// save the closeness data to a txt file
+function ship_data()
+{
+	var _output = [["Body", "Legs", "Used Gun", "Clossest Dist"]]
+	var _iter = 1
+	// loops over all the enemies
+	for(var _i = 0; _i < array_length(closeness_data); _i++)
+	{
+		var _en_leg = sprite_get_name(closeness_data[_i][0])
+		var _en_bod = sprite_get_name(closeness_data[_i][1])
+		// loops over all of the bullets
+		for(var _j = 0; _j < array_length(closeness_data[_i][2]); _j++)
+		{
+			_output[_iter] = [_en_bod, _en_leg, sprite_get_name(closeness_data[_i][2][_j][1]), closeness_data[_i][2][_j][0]]
+			_iter++
+		}
+	}
+	var _file = file_text_open_write(game_save_id + "data.txt")
+	file_text_write_string(_file, string(_output))
+	file_text_close(_file)
+}

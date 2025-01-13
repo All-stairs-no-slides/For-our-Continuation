@@ -23,6 +23,7 @@ switch (state){
 	break;
 	
 	case "aggressive":
+		// check the create event to see how it works
 		pathing(1)
 		break;
 	case "death":

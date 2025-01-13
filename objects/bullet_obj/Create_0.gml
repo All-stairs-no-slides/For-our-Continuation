@@ -1,8 +1,11 @@
+// set the closest point to the largest number for future comparission
+closest_point = infinity
 // add to depth sorting
 depth_sorter = instance_find(collider_depth_sorter_obj, 0);
 depth_sorter.colliders[array_length(depth_sorter.colliders)] = self;
 
 // the state machine 4 hat typ of bullte it is
+// type refers to the ggun that shot the bullet
 switch(type){
 	case enemy_gun_gat_spr:
 		direction = point_direction(x, y, player.x, player.y)
