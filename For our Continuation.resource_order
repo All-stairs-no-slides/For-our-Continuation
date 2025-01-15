@@ -63,6 +63,7 @@
     {"name":"exit_shadow_spr","order":27,"path":"sprites/exit_shadow_spr/exit_shadow_spr.yy",},
     {"name":"fg_glass_spr","order":3,"path":"sprites/fg_glass_spr/fg_glass_spr.yy",},
     {"name":"fg_glass_window_spr","order":4,"path":"sprites/fg_glass_window_spr/fg_glass_window_spr.yy",},
+    {"name":"for_cont_demo","order":34,"path":"sprites/for_cont_demo/for_cont_demo.yy",},
     {"name":"gat_bul_spr","order":9,"path":"sprites/gat_bul_spr/gat_bul_spr.yy",},
     {"name":"grass_ts_spr","order":18,"path":"sprites/grass_ts_spr/grass_ts_spr.yy",},
     {"name":"gun_arm","order":15,"path":"sprites/gun_arm/gun_arm.yy",},

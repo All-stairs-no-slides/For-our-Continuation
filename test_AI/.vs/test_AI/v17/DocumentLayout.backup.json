@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\test_AI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD187C55-78F9-405D-8802-22063F75F3F8}|test_AI\\test_AI.csproj|c:\\users\\main\\desktop\\projects\\for-our-continuation\\test_ai\\test_ai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD187C55-78F9-405D-8802-22063F75F3F8}|test_AI\\test_AI.csproj|solutionrelative:test_ai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\test_AI\\test_AI\\Program.cs",
+              "RelativeDocumentMoniker": "test_AI\\Program.cs",
+              "ToolTip": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\test_AI\\test_AI\\Program.cs",
+              "RelativeToolTip": "test_AI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T01:26:19.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

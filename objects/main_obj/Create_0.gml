@@ -111,6 +111,8 @@ function first_room_spawner(){
 }
 
 // save the closeness data to a txt file
+
+
 function ship_data()
 {
 	var _output = [["Body", "Legs", "Used Gun", "Clossest Dist"]]
@@ -127,7 +129,19 @@ function ship_data()
 			_iter++
 		}
 	}
-	var _file = file_text_open_write(game_save_id + "data.txt")
+	_output = string_replace_all(string(_output), "[", "")
+	_output = string_delete(_output, 0, 2)
+	_output = string_delete(_output, string_length(_output) - 2, 4)
+	_output = string_replace_all(_output, " ], ", "\n")
+	_output = string_replace_all(_output, "\"", "")
+	var _file = file_text_open_write(game_save_id + "data.csv")
 	file_text_write_string(_file, string(_output))
 	file_text_close(_file)
+	show_debug_message(game_save_id + "data.csv")
+	if(room != home_rm){
+		show_debug_message("starto")
+		show_debug_message(external_call(EnemySelection, game_save_id + "data.csv"))
+	}
 }
+
+
