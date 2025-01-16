@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Reference Include="Enemy_creation_ext">
-      <HintPath>..\..\datafiles\Enemy_creation_ext.dll</HintPath>
+      <HintPath>..\..\Enemy_creation_ext\Enemy_creation_ext\bin\x64\Debug\Enemy_creation_ext.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -31,21 +31,21 @@ namespace Enemy_creation_ext
         [DllExport("EnemySelection", CallingConvention.Cdecl)]
         public static string EnemySelection(string Data_File_Path)
         {
-            Data_File_Path = @"C:\Users\main\AppData\Local\For_our_Continuation\data.csv";
-
-            
 
             // Load the data
-            //try
-            //{
-            //    Console.WriteLine(File.Exists(Data_File_Path));
-            //    //MLContext mlContext = new MLContext();
-            //    //TextLoader data = mlContext.Data.CreateTextLoader<ML_model>(separatorChar: ',', hasHeader: true);
-            //} catch(Exception e)
-            //{
-            //    return "hoi";
-            //}
-            return Data_File_Path;
+            try
+            {
+                Console.WriteLine(File.Exists(Data_File_Path));
+                MLContext mlContext = new MLContext();
+                TextLoader data = mlContext.Data.CreateTextLoader<ML_model>(separatorChar: ',', hasHeader: true);
+                
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+            return "gdOY";
+
         }
     }
 }
