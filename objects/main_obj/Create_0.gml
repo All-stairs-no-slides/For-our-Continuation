@@ -143,7 +143,7 @@ function ship_data()
 	// do ML stuff
 	if(room != home_rm){
 		show_debug_message("starto")
-		show_debug_message(EnemySelection("data.csv"))
+		show_debug_message(EnemySelection(game_save_id + "data.csv"))
 	}
 }
 

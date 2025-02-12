@@ -33,18 +33,11 @@ namespace Enemy_creation_ext
         {
 
             // Load the data
-            try
-            {
-                Console.WriteLine(File.Exists(Data_File_Path));
-                MLContext mlContext = new MLContext();
-                TextLoader data = mlContext.Data.CreateTextLoader<ML_model>(separatorChar: ',', hasHeader: true);
-                
-            }
-            catch (Exception e)
-            {
-                return e.Message;
-            }
-            return "gdOY";
+            Console.WriteLine(File.Exists(Data_File_Path));
+            MLContext mlContext = new MLContext();
+            IDataView data = mlContext.Data.LoadFromTextFile<ML_model>(Data_File_Path, separatorChar: ',', hasHeader: true);
+
+            return "volly";
 
         }
     }

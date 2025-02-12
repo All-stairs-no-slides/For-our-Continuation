@@ -160,7 +160,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="MLModel1.mbconfig" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup Label="MLModel1">
+    <Compile Include="MLModel1.consumption.cs">
+      <DependentUpon>MLModel1.mbconfig</DependentUpon>
+    </Compile>
+    <Compile Include="MLModel1.evaluate.cs">
+      <DependentUpon>MLModel1.mbconfig</DependentUpon>
+    </Compile>
+    <Compile Include="MLModel1.training.cs">
+      <DependentUpon>MLModel1.mbconfig</DependentUpon>
+    </Compile>
+    <None Include="MLModel1.mlnet">
+      <DependentUpon>MLModel1.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ImportGroup Label=".NET DllExport">

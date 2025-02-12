@@ -70,3 +70,4 @@ C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_cre
 C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\x64\Debug\Enemy_cr.578B134F.Up2Date
 C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\x64\Debug\Enemy_creation_ext.dll
 C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\obj\x64\Debug\Enemy_creation_ext.pdb
+C:\Users\main\Desktop\projects\For-our-Continuation\Enemy_creation_ext\Enemy_creation_ext\bin\x64\Debug\MLModel1.mlnet
