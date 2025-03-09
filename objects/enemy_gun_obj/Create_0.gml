@@ -25,7 +25,7 @@ for (var _i=0; _i < array_length(spr_g); _i++){
 			r_speeds[_i] = 2;
 			break;
 		case en_gun_pea_spr:
-			durs[_i] = 2
+			durs[_i] = 0.25
 			alarm[_i] = _i+1 * game_get_speed(gamespeed_fps)
 			r_speeds[_i] = 2
 			break;

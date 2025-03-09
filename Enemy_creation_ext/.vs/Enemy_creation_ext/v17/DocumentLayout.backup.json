@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\Enemy_creation_ext\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82254FA0-7AF2-4CBD-A0D9-F9FAC432260D}|Enemy_creation_ext\\Enemy_creation_ext.csproj|C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\Enemy_creation_ext\\enemy_creation_ext\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82254FA0-7AF2-4CBD-A0D9-F9FAC432260D}|Enemy_creation_ext\\Enemy_creation_ext.csproj|c:\\users\\main\\desktop\\projects\\for-our-continuation\\enemy_creation_ext\\enemy_creation_ext\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82254FA0-7AF2-4CBD-A0D9-F9FAC432260D}|Enemy_creation_ext\\Enemy_creation_ext.csproj|solutionrelative:enemy_creation_ext\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82254FA0-7AF2-4CBD-A0D9-F9FAC432260D}|Enemy_creation_ext\\Enemy_creation_ext.csproj|c:\\users\\main\\desktop\\projects\\for-our-continuation\\enemy_creation_ext\\enemy_creation_ext\\mlmodel1.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
-      "RelativeMoniker": "D:0:0:{82254FA0-7AF2-4CBD-A0D9-F9FAC432260D}|Enemy_creation_ext\\Enemy_creation_ext.csproj|solutionrelative:enemy_creation_ext\\mlmodel1.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MLModel1.mbconfig",
-              "DocumentMoniker": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\Enemy_creation_ext\\Enemy_creation_ext\\MLModel1.mbconfig",
-              "RelativeDocumentMoniker": "Enemy_creation_ext\\MLModel1.mbconfig",
-              "ToolTip": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\Enemy_creation_ext\\Enemy_creation_ext\\MLModel1.mbconfig",
-              "RelativeToolTip": "Enemy_creation_ext\\MLModel1.mbconfig",
-              "Icon": "7f5c38b0-f0bc-4551-a9a8-b4f467cc4670.000012|",
-              "WhenOpened": "2025-02-09T09:56:34.589Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +24,7 @@
               "RelativeDocumentMoniker": "Enemy_creation_ext\\Class1.cs",
               "ToolTip": "C:\\Users\\main\\Desktop\\projects\\For-our-Continuation\\Enemy_creation_ext\\Enemy_creation_ext\\Class1.cs",
               "RelativeToolTip": "Enemy_creation_ext\\Class1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T21:25:31.668Z",
               "EditorCaption": ""

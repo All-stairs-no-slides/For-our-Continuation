@@ -20,7 +20,10 @@ health = 100
 oroom = room
 depth = 0
 
-global.en_credits = 10
+// weights of each gun (based on the positions of the guns within the var _the_guns array at the end of the function
+gun_w = [33, 33, 33];
+
+global.en_credits = 100
 
 //*************************
 // functionalities below
@@ -37,13 +40,14 @@ if(audio_is_paused(start_screen_sd) || !audio_is_playing(start_screen_sd)){
 
 // spawn enemies in the first room
 function first_room_spawner(){
+	show_debug_message("weights")
+	show_debug_message(gun_w)
 	prev_c = global.en_credits
 	bod = 0
 	leg = 0
 	// gs stores the random number, which is then matched to what it would be after weighting is conscidered
 	gs = []
-	// weights of each gun (based on the positions of the guns within the var _the_guns array at the end of the function
-	gun_w = [1, 2, 3];
+	
 	overall_w = 0;
 	
 	// for the while loop (the while loop will break when credits is 0, however an iterator is also needed)
@@ -117,9 +121,12 @@ function ship_data()
 {
 	var _output = [["Body", "Legs", "Used Gun", "Clossest Dist"]]
 	var _iter = 1
+	//show_debug_message("gdoy")
+	//show_debug_message(array_length(closeness_data))
 	// loops over all the enemies
 	for(var _i = 0; _i < array_length(closeness_data); _i++)
 	{
+		
 		var _en_leg = sprite_get_name(closeness_data[_i][0])
 		var _en_bod = sprite_get_name(closeness_data[_i][1])
 		// loops over all of the bullets
@@ -135,15 +142,25 @@ function ship_data()
 	_output = string_delete(_output, string_length(_output) - 2, 4)
 	_output = string_replace_all(_output, " ], ", "\n")
 	_output = string_replace_all(_output, "\"", "")
+	//show_debug_message(_output)
 	// save the data
 	var _file = file_text_open_write(game_save_id + "data.csv")
 	file_text_write_string(_file, string(_output))
 	file_text_close(_file)
-	show_debug_message(game_save_id + "data.csv")
+
 	// do ML stuff
 	if(room != home_rm){
-		show_debug_message("starto")
-		show_debug_message(EnemySelection(game_save_id + "data.csv"))
+
+		var _weights_string = EnemySelection(game_save_id + "data.csv")
+		//show_debug_message(_weights_string)
+		var _weights_array = string_split(_weights_string, "$$")
+		for(var _i = 0; _i < array_length(_weights_array); _i++){
+			_weights_array[_i] = real(_weights_array[_i]) * 100
+
+		}
+		show_debug_message(_weights_array)
+		gun_w = _weights_array
+
 	}
 }
 

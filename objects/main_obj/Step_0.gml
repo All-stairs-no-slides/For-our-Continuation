@@ -10,7 +10,7 @@ if(room == home_rm){
 if(ens == 0){
 	//show_message("hi")
 	ens = 1
-	global.en_credits += 10
+	global.en_credits += 100
 	var _exit = instance_create_layer(floor(room_width / 2), floor(room_height / 2), "Exits", exit_obj)
 	var _depth_sorter = instance_find(collider_depth_sorter_obj, 0);
 	_depth_sorter.colliders[array_length(_depth_sorter.colliders)] = _exit;
